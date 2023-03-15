@@ -1,0 +1,23 @@
+<div class="container mt-5">
+  <h1 class="mt-3 mb-5">Example of ngStyle and ngClass</h1>
+  <h6 [ngStyle]="{ color: 'green' }">
+    {{ OneWayBinding_Interpolation }}
+  </h6>
+  <br /><br />
+
+  <h6>This is two way Data Binding</h6>
+  <input
+    type="text"
+    [ngStyle]="{ color: 'red', 'font-weight': '400' }"
+    [(ngModel)]="firstname"
+    placeholder="Write here something"
+  /><br /><br />
+  <h1 [ngStyle]="{ color: 'blue', 'font-weight': '500' }">{{ firstname }}</h1>
+  <br /><br />
+  <input
+    type="text"
+    [ngStyle]="{ color: 'green', 'font-weight': '100' }"
+    value="{{ firstname }}"
+    placeholder="Write here something"
+  />
+</div>
